@@ -1,0 +1,13 @@
+#AutomaticText{
+    
+    display: inline-block ;
+    border-style: solid;
+    border-radius: 8px;
+    width: 40%;
+    
+
+}
+#search {
+    border-style: none;
+    
+}

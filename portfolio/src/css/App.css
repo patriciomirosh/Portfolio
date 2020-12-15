@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+nav div{
+  width: 100%;
+  height: 100%;
+  border: #61dafb;
+  border-style: solid;
+  
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d809f;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+nav ul li{
+  display: inline-block;
+  
+  margin-left: 8px;
+  }
+
+.btnNav {
+  
+  background: #92c7eb;
+  background-image: url("http://res.freestockphotos.biz/pictures/15/15107-illustration-of-a-red-close-button-pv.png");
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  border: none;
+  padding: 20px;
+  width: 70px;
+  border-radius: 900px;
+  height: 70px;
+  transition: all 0.5s;
+  cursor: pointer;
+ }
+ .btn:hover
+ {
+  width: 108%;
+  height: 108%;
+ }
+ .btnNav:hover
+ {
+  width: 71px;
+  height: 71px;
+ }
+
+ 
