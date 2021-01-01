@@ -24,40 +24,22 @@ export default class Footer extends Component {
            <div>
            
             <footer style={{marginTop:"25%",}}>
-            <div class="padre">
-                <ul>
-                    <li>
-                        <img src={consultas} alt="consultas" class="icono1"/>
-                        <buttom  className="btn btn-info" onClick ={this.onClick} >Consultas </buttom>
-                    </li>
-                    <li>
-                        <img src={whatsapp} alt="celular" class="icono1"/>
-                        <label>+54 9 3756 532653</label>
-                    </li>
-                    <li>
-                        <img src={email} alt="mail" class="icono1"/>
-                        <label>mirospatricio@gmail.com</label>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h4>Nuestras redes sociales</h4>
-                    </li>
-                    <div class="redes">
-                        <li>
-                            <img src={facebook} alt="facebook" class="icono2"/>
-                            <a href="https://www.facebook.com/patricio.pereyra.50/" className="oculto consultas">Facebook
-                            </a>
-                        </li>
-                        <li>
-                            <img src={instagram} alt="instagram" class="icono2"/>
-                            <a href="https://www.instagram.com/pato_16_2/"
-                                class="oculto consultas">Instagram</a>
-                        </li>
+            <div class="footcnt">
+                    <div className="fInfo">
+                        <span>
+                            Esto no es Google no te confundas
+                        </span>
+                    </div> 
+                    <div className="fContact">
+                        <a href="#">Contactanos</a>
+                        <a href="#">Nuestros CV</a>
+                        <a href="#">Linkedin Patricio Miroshnitshenko</a>
+                        <a href="#">Linkedin Melani Luraschi</a>
                     </div>
-                </ul>
-            
             </div>
+               
+            
+            
         </footer>
         <div hidden={this.state.contactMe}>
    

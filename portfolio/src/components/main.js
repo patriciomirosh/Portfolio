@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Typed from 'typed.js';
-import busqueda from '../sample/busqueda.PNG'
+
 
 
 
@@ -38,7 +38,7 @@ export default class TypedReactDemo extends Component {
 			  ref={(el) => { this.el = el; }}
 			  
 			/></div>
-			<button id="search"><img src={busqueda} alt="busqueda" /></button>
+		
 		  </div>
 		</div>
 	  );
