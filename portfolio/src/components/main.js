@@ -29,18 +29,18 @@ export default class TypedReactDemo extends Component {
   
 	render() {
 	  return (
-		<div className="wrap">
-		  <h1>Google</h1>
-		  <div className="container" >
-			<div id="AutomaticText"><span
+		// <div className="wrap">
+		// <h1>Google</h1></div>
+		
+		 
+		 <span
 			onMouseOut=	{() => this.typed.reset()}
 			  style={{ whiteSpace: 'pre' }}
 			  ref={(el) => { this.el = el; }}
 			  
-			/></div>
+			/>
 		
-		  </div>
-		</div>
+		
 	  );
 	}
   }

@@ -75,7 +75,7 @@ export default class Footer extends Component {
           className="row container-fluid"
         >
           <div style={{ marginTop: "1em" }} className="row container">
-            <div className="col sm-4">
+            <div className="col-sm-3">
               <button
                 className="btn btn-info"
                 onClick={() =>
@@ -88,7 +88,7 @@ export default class Footer extends Component {
                 <h5 hidden={this.state.contact[0]}>+54 3413504626</h5>
               </button>
             </div>
-            <div className="col sm-4">
+            <div className="col-sm-3">
               <button
                 className="btn btn-info"
                 onClick={() =>
@@ -101,7 +101,7 @@ export default class Footer extends Component {
                 <h5 hidden={this.state.contact[1]}>meelu15@gmail.com</h5>
               </button>
             </div>
-            <div className="col sm-4">
+            <div className="col-sm-6">
               <button
                 className="btn btn-info"
                 onClick={() =>

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Contactofotos from "../sample/Contactofotos.PNG";
 import TypedReactDemo from "./main";
 import imgNosotros from "../sample/nosotros.jpg";
 import "../css/home.css";
@@ -15,15 +14,17 @@ export default class Home extends Component {
          
 <img id="nosotros" src={imgNosotros} alt="Nostros"/>
         </div>
-        
-        <TypedReactDemo 
+        <div className="wrap">
+        <h1>Google</h1>
+        <div className="container" >
+			<div id="AutomaticText"> <TypedReactDemo 
           strings={[
             " Desarrolladores Web <i>FullStack</i> ",
             " <<strong>Luraschi</strong> Melani/>",
             " <<strong>Miroshnitshenko</strong> Patricio/>",
           ]}
         />
-      </div>
+      </div></div></div></div>
      
     );
   }

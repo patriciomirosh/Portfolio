@@ -35,7 +35,7 @@ export default class Portfolio extends Component {
     render() {
         return (
             <Fragment id="portfolio" >
-    <div class="container-fluid"  >
+    <div class="container-fluid" style={{marginTop:" 10%"}} >
 	<div class="row">
 		<div class="col-md-12">
 			<h3 class="text-center">

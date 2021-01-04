@@ -127,3 +127,15 @@ nav ul li{
  }
  
 
+ @media screen and (max-width: 600px) {
+  nav ul li{
+    display: inline-block;
+    margin-left: 0px;
+    width: 30vw;
+
+  }
+  .eyeSlashWord{
+    visibility: hidden;
+  }
+  #containerNavBar{height: 40px;}
+}

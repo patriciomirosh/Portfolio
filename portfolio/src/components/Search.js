@@ -27,9 +27,9 @@ export default class Search extends Component {
 
         return (
             <div style={{textAlign:"left"}}>
-                <img src={googleEjemplo} />
-                <div  id="busqueda" > <input /> <img src={busqueda}  /> </div>
-                <div><img src={googleNav} width="100%" alt="googlenav bar" /></div>
+                <img src={googleEjemplo} alt="googleEjemplo"/>
+                <div  id="busqueda" > < img src={busqueda} className="align-self-left"  alt="busqueda"/> <input /> </div>
+                <div><img src={googleNav}  alt="googlenav bar" /></div>
                 <div className="row ">
 
                     <div className="col">

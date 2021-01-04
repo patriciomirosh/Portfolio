@@ -6,7 +6,6 @@ import HeaderSearch from './components/HeaderSearch'
 import Footer from "./components/footer";
 import Home from "./components/Home";
 import React from "react";
-import mic from './sample/mic.png'
 import iconbuscar from './sample/search.png'
 import iconohome from './sample/homepage.png'
 import iconportafolio from './sample/portfolio.png'
@@ -14,7 +13,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   NavLink,
 } from "react-router-dom";
 import {useState} from "react";
@@ -41,7 +39,7 @@ function App() {
                 <button onClick={()=>colorPage(["white","rgb(71,146,230)","rgb(71,146,230)"])} style={{backgroundColor:statePage[0],zIndex:"1000",border:"black"}}
                   className="eyelash" 
                 >
-                <img src={iconbuscar} alt="iconbuscar" height="15px" width="15px"  zIndex="1100"  className="align-self-center"  /> &nbsp;&nbsp; Inicio
+                <img src={iconbuscar} alt="iconbuscar" height="15px" width="15px"  zIndex="1100"  className="align-self-center"  /> <i className="eyeSlashWord">&nbsp;&nbsp; Inicio</i>
                 </button>
               </li>
             </NavLink>
@@ -51,7 +49,7 @@ function App() {
                   className="
 eyelash"
                 >
-                  <img src={iconohome} alt="iconohome" height="15px" width="15px"  zIndex="1100"  className="align-self-center" /> &nbsp;&nbsp;Search
+                  <img src={iconohome} alt="iconohome" height="15px" width="15px"  zIndex="1100"  className="align-self-center" /><i className="eyeSlashWord">&nbsp;&nbsp; Search</i>
                 </button>
               </li>
             </NavLink>
@@ -62,7 +60,7 @@ eyelash"
                   className="
 eyelash"
                 >
-                  <img src={iconportafolio} alt="iconportafolio" height="15px" width="15px"  zIndex="1100"  className="align-self-center" /> &nbsp;&nbsp;Portfolio
+                  <img src={iconportafolio} alt="iconportafolio" height="15px" width="15px"  zIndex="1100"  className="align-self-center" /><i className="eyeSlashWord">&nbsp;&nbsp; Portfolio</i>
                 </button>
               </li>{" "}
             </NavLink>
