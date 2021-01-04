@@ -53,7 +53,7 @@ nav{
   padding-left: 20px; */
 }
 .eyelashUl{
-
+ padding-left: 0;
 }
 nav ul li{
   display: inline-block;
@@ -116,16 +116,11 @@ nav ul li{
   bottom: 0;
  }
  #navBarrHome ul{
-   margin-right: 0;
-
-   display: flex;
+   margin-left: 0;
+   /* display: flex; */
    justify-content: row;
    bottom: 0;
    list-style:none;
- }
- .eyelash:hover
- {
-  background-color: #6C6CF7; 
  }
  .eyelash:focus{
    border:white

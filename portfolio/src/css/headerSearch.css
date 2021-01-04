@@ -1,0 +1,31 @@
+#headerSearch{
+width: 100%;
+height: 5.3vh;
+margin-top: 3px;
+border-bottom: 1px solid #abadb1;
+}
+#padlock{
+   display: inline;
+
+}
+.url{
+    display: inline;
+}
+#searchUrl{
+ width: 100%;
+ height: 30px;
+ background-color: #f1f3f4;
+ border-radius: 15px;
+}
+#headerSearchF{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.2sem;
+}
+.iconNav{
+    height:1.5em ;
+}
+.favorite{
+    height: 1.3em;
+   
+}

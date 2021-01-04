@@ -2,13 +2,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/material-components-web/dist/material-components-web.min.css";
 import "./css/App.css";
 import "./css/footer.css";
+import HeaderSearch from './components/HeaderSearch'
 import Footer from "./components/footer";
 import Home from "./components/Home";
 import React from "react";
 import mic from './sample/mic.png'
-import iconbuscar from './sample/iconbuscar.PNG'
-import iconohome from './sample/iconohome.PNG'
-import iconportafolio from './sample/iconportafolio.PNG'
+import iconbuscar from './sample/search.png'
+import iconohome from './sample/homepage.png'
+import iconportafolio from './sample/portfolio.png'
 import {
   BrowserRouter as Router,
   Switch,
@@ -67,6 +68,7 @@ eyelash"
             </NavLink>
           </ul>
         </nav>
+        <HeaderSearch/>
       </div>
       <div className="App">
         <Switch>
