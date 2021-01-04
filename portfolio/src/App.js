@@ -32,9 +32,9 @@ function App() {
   
   return (
     <Router>
-      <div>
-        <nav className="navBarrHome">
-          <ul>
+      <div className="container-fluid">
+        <nav id="navBarrHome"className="row">
+          <ul className="eyelashUl">
             <NavLink to="/">
               <li >
                 <button onClick={()=>colorPage(["white","rgb(71,146,230)","rgb(71,146,230)"])} style={{backgroundColor:statePage[0],zIndex:"1000",border:"black"}}

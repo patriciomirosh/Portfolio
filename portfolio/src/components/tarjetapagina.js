@@ -9,7 +9,8 @@ export default class TarjetaPagina extends Component {
             <div class="card-body">
                <h5 class="card-title">{this.props.title}</h5>
                <p class="card-text">{this.props.text}</p>
-               <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-light btn-sm">Ir a la pagina</a>
+               <div><a href={this.props.a} target="_blank" rel="noreferrer" className="btn btn-light">Ir a la pagina</a></div>
+               <div class="card-footer"></div>
             </div>
          </div>
       </div>

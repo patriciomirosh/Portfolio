@@ -16,8 +16,9 @@
 .nosotros{
     width: auto; 
     display: flex;
-   margin:0 80%;
+    
    margin-top: 10px;
+   margin-right:20px;
    
 }
 #nosotros{

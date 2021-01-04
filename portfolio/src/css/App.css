@@ -48,14 +48,16 @@ nav{
   display: flex;
   justify-content: space-between;
   background-color: #1d809f;
-  align-items: center;
-  padding-right: 20px;
-  padding-left: 20px;
+  /* align-items: center; */
+  /* padding-right: 20px;
+  padding-left: 20px; */
+}
+.eyelashUl{
+
 }
 nav ul li{
   display: inline-block;
-  
-  margin-left: 8px;
+  margin-left: 0px;
   }
 
 .btnNav {
@@ -84,9 +86,9 @@ nav ul li{
   height: 71px;
  }
 
- .navBarrHome{
+ #navBarrHome{
   background-color: rgb(71,146,230);
-  left:0%
+  height: 37px;
 
 }
 
@@ -110,10 +112,10 @@ nav ul li{
   cursor: pointer;
   
  }
- .navBarrHome ul li{
+ #navBarrHome .nav {
   bottom: 0;
  }
- .navBarrHome ul{
+ #navBarrHome ul{
    margin-right: 0;
 
    display: flex;
