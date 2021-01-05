@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import TarjetaPagina from '../components/tarjetapagina'
+import Footer from '../components/footer'
 import GoAdiestramiento from '../sample/Goadiestramiento.PNG'
 import MimundoEncantado from '../sample/MiMundoEncantado.PNG'
 import icon1 from '../sample/icon1.png'
@@ -11,6 +12,8 @@ import miscomienzos from '../sample/miscomienzos.JPG'
 import aviones from '../sample/aviones.JPG'
 import dietetica from '../sample/dietetica.JPG'
 import proyectofinal from '../sample/proyectofinal.JPG'
+import perroygato from '../sample/perroygato.JPG'
+import corazon from '../sample/corazon.JPG'
 import '../css/portfolio.css'
 export default class Portfolio extends Component {
     constructor(args) {
@@ -64,14 +67,14 @@ export default class Portfolio extends Component {
 		<div class="col-md-9" >
 			<div className="row TarjetaPagina  " style={{border:"solid 1px lightblue", borderRadius:"15px"}} hidden={this.state.page && !this.state.app && !this.state.ad && !this.state.ml && !this.state.ing ? false : true}>
 				
-			<TarjetaPagina title="GoAdiestramiento" text="Pagina de Comercio de Adiestramiento para perros" imgs={GoAdiestramiento}  a={"https://patriciomirosh.github.io/Webpractica/"}/>
+			<TarjetaPagina title="GoAdiestramiento" text="Pagina de Comercio de Adiestramiento para perros" imgs={GoAdiestramiento}  a={"https://patriciomirosh.github.io/claseBS/"}/>
             <TarjetaPagina title="Mi Web practica"  text="Mi pagina de pratica"   imgs={miscomienzos}  a={"https://patriciomirosh.github.io/Webpractica/"}   />
-            <TarjetaPagina title="Dietetica" text="Eccomerce de Dietetica en Desarrollo" imgs={dietetica} a={"https://patriciomirosh.github.io/Webpractica/"}/>
+            <TarjetaPagina title="Dietetica" text="Eccomerce de Dietetica en Desarrollo" imgs={dietetica} a={"https://patriciomirosh.github.io/claseBS/"}/>
 			</div>
             <div className="row TarjetaPagina"  style={{border:"solid 1px lightblue", borderRadius:"15px"}} hidden={this.state.app && !this.state.page && !this.state.ad && !this.state.ml && !this.state.ing ? false : true}>
 				
-			<TarjetaPagina title="Feria Virtual" text="Proyecto para ayudar a virtualizar a pequeños emprendedores" imgs={Emprendedores}  a={"https://docs.google.com/document/d/1OTOjVLAbHhPcUqBF7a6xgyuctBX2t5HM3PiIWDSVsiA/edit?usp=sharing"}/>
-            <TarjetaPagina title="Mi mundo Encantando"  text="Proximamente"   imgs={MimundoEncantado}  a={"https://patriciomirosh.github.io/Webpractica/"}   />
+			<TarjetaPagina title="Feria Virtual" text="Proyecto para ayudar a virtualizar a pequeños emprendedores" imgs={Emprendedores}  a={"https://patriciomirosh.github.io/claseBS/"}/>
+            <TarjetaPagina title="Mi mundo Encantando"  text="Proximamente"   imgs={MimundoEncantado}  a={"https://patriciomirosh.github.io/claseBS/"}   />
             <TarjetaPagina title="Administrador de Registros Personal" text="Registrador personal" imgs={icon1} a={"https://github.com/patriciomirosh/Administrador-de-Registros"}/>
 			</div>
             <div className="row TarjetaPagina"  style={{border:"solid 1px lightblue", borderRadius:"15px"}} hidden={this.state.ad && !this.state.app && !this.state.page && !this.state.ml && !this.state.ing ? false : true}>
@@ -82,9 +85,9 @@ export default class Portfolio extends Component {
 			</div>
             <div className="row TarjetaPagina"  style={{border:"solid 1px lightblue", borderRadius:"15px"}} hidden={this.state.ml && !this.state.app && !this.state.ad && !this.state.page && !this.state.ing ? false : true}>
 				
-			<TarjetaPagina title="Reconocedor de Animales con IA" text="Pagina que reconoce animales: gatos o perros por imagenes" imgs={GoAdiestramiento} a={"https://patriciomirosh.github.io/Webpractica/"}/>
-            <TarjetaPagina title="Predictor de Enfermedades con ML"  text="podemos afirmar que una persona con diferentes rasgos somos capaz de predecir sus enfermedades hasta en un 70 %"   imgs={MimundoEncantado}    a={"https://patriciomirosh.github.io/Webpractica/"} />
-            <TarjetaPagina title="Algoritmos de Machine Learning" text="Diferentes algoritmos para la toma de desicion aplicables en Machine Learning" imgs={icon1} a={"https://patriciomirosh.github.io/Webpractica/"}/>
+			<TarjetaPagina title="Reconocedor de Animales con IA" text="Pagina que reconoce animales: gatos o perros por imagenes" imgs={perroygato} a={"https://patriciomirosh.github.io/claseBS/"}/>
+            <TarjetaPagina title="Predictor de Enfermedades con ML"  text="podemos afirmar que una persona con diferentes rasgos somos capaz de predecir sus enfermedades hasta en un 70 %"   imgs={corazon}    a={"https://patriciomirosh.github.io/claseBS/"} />
+            <TarjetaPagina title="Algoritmos de Machine Learning" text="Diferentes algoritmos para la toma de desicion aplicables en Machine Learning" imgs={icon1} a={"https://github.com/patriciomirosh/Machine-learning"}/>
 			</div>
             <div className="row TarjetaPagina"  style={{border:"solid 1px lightblue", borderRadius:"15px"}} hidden={this.state.ing && !this.state.app && !this.state.ad && !this.state.ml && !this.state.page ? false : true}>
 				
@@ -94,7 +97,8 @@ export default class Portfolio extends Component {
             </div>
 	</div>
 </div>
-
+<Footer/>
+        
             </Fragment>
         )
     }

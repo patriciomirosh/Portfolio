@@ -8,8 +8,8 @@ export default class Home extends Component {
   render() {
     return (
       
-      <div className="containerGoogle">
-        <div className="nosotros">
+      <div className="containerGoogle" >
+        <div className="nosotros" >
           <p className="align-self-center">Gmail&nbsp;Imagenes</p>
          
 <img id="nosotros" src={imgNosotros} alt="Nostros"/>

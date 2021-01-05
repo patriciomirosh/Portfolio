@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import SearchLinks from './searchLinks'
+import Footer from './footer'
 import ContainSearchProfile from './containSearchProfile'
 import Example from './WebTools'
 import googleNav from '../sample/googleNav.PNG'
@@ -26,6 +27,7 @@ export default class Search extends Component {
     render() {
 
         return (
+            <Fragment>
             <div style={{textAlign:"left"}}>
                 <img src={googleEjemplo} alt="googleEjemplo"/>
                 <div  id="busqueda" > < img src={busqueda} className="align-self-left"  alt="busqueda"/> <input /> </div>
@@ -44,6 +46,8 @@ export default class Search extends Component {
                     </div>
                 </div>
             </div>
+            <Footer/>
+            </Fragment>
         )
     }
     
