@@ -10,3 +10,15 @@
     height:90%;
     
     ;}
+  
+
+    
+  .TarjetaPagina{
+    opacity: 0;
+    animation: sum_keyframes_aparecer_de_arriba 1.7s;
+    -webkit-animation: sum_keyframes_aparecer_de_arriba 1.7s;
+    animation-fill-mode: forwards;
+   
+}
+
+  
