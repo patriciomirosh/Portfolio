@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
+import Particulas from '../components/particulas'
 import TarjetaPagina from '../components/tarjetapagina'
-import Footer from '../components/footer'
 import GoAdiestramiento from '../sample/Goadiestramiento.PNG'
 import MimundoEncantado from '../sample/MiMundoEncantado.PNG'
 import icon1 from '../sample/icon1.png'
@@ -40,20 +40,21 @@ export default class Portfolio extends Component {
 
     render() {
         return (
-            <Fragment id="portfolio" >
-    <div class="container-fluid" style={{marginTop:" 10%"}} >
-	<div class="row">
-		<div class="col-md-12">
-			<h3 class="text-center">
+            <Fragment  >
+              <Particulas/>
+    <div className="container-fluid" style={{marginTop:" 10%"}} >
+	<div className="row">
+		<div className="col-md-12">
+			<h3 className="text-center">
 				Nuestro Portfolio
 			</h3>
-			<p class="text-center text-muted lead">
+			<p className="text-center text-muted lead">
 				 <strong>Podran Encontrar algunos de nuestros trabajos aqui</strong>. 
 			</p>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-3" >
+	<div className="row">
+		<div className="col-md-3" >
 			 
                        <ul style={{justifyContent:"space-between", marginTop:"10%"}} >
                             <li><button className="btn bg-dark text-white container" onClick={() => this.setState({ page: !this.state.page, app: false, ad: false, ml: false, ing: false })}>Paginas Web</button></li><br/>
@@ -64,7 +65,7 @@ export default class Portfolio extends Component {
                         </ul>
 		</div>
 		
-		<div class="col-md-9" >
+		<div className="col-md-9" >
 			<div className="row TarjetaPagina  " style={{border:"solid 1px lightblue", borderRadius:"15px"}} hidden={this.state.page && !this.state.app && !this.state.ad && !this.state.ml && !this.state.ing ? false : true}>
 				
 			<TarjetaPagina title="GoAdiestramiento" text="Pagina de Comercio de Adiestramiento para perros" imgs={GoAdiestramiento}  a={"https://patriciomirosh.github.io/claseBS/"}/>
@@ -87,7 +88,7 @@ export default class Portfolio extends Component {
 				
 			<TarjetaPagina title="Reconocedor de Animales con IA" text="Pagina que reconoce animales: gatos o perros por imagenes" imgs={perroygato} a={"https://patriciomirosh.github.io/claseBS/"}/>
             <TarjetaPagina title="Predictor de Enfermedades con ML"  text="podemos afirmar que una persona con diferentes rasgos somos capaz de predecir sus enfermedades hasta en un 70 %"   imgs={corazon}    a={"https://patriciomirosh.github.io/claseBS/"} />
-            <TarjetaPagina title="Algoritmos de Machine Learning" text="Diferentes algoritmos para la toma de desicion aplicables en Machine Learning" imgs={icon1} a={"https://github.com/patriciomirosh/Machine-learning"}/>
+            <TarjetaPagina title="Algoritmos de Machine Learning" text="Diferentes algoritmos para la toma de desicion, aplicables en Machine Learning" imgs={icon1} a={"https://github.com/patriciomirosh/Machine-learning"}/>
 			</div>
             <div className="row TarjetaPagina"  style={{border:"solid 1px lightblue", borderRadius:"15px"}} hidden={this.state.ing && !this.state.app && !this.state.ad && !this.state.ml && !this.state.page ? false : true}>
 				
@@ -97,8 +98,8 @@ export default class Portfolio extends Component {
             </div>
 	</div>
 </div>
-<Footer/>
-        
+
+
             </Fragment>
         )
     }

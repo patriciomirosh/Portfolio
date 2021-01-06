@@ -2,7 +2,10 @@ footer {
   background: #f2f2f2;
   color: rgb(0, 0, 0);
   width: 100%;
-  
+  margin-top: 30%;
+  position: static;
+  bottom:1%
+ 
 }
 .footcnt {
   border-top: 1px solid #dadce0;

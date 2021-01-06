@@ -128,12 +128,21 @@ nav ul li{
  
 
  @media screen and (max-width: 600px) {
+  .nosotros{
+    width: auto; 
+    display: flex;
+    
+   margin-top: 10px;
+   margin-left:50%;
+
+   
+}
   nav ul li{
     display: inline-block;
     margin-left: 0px;
     width: 30vw;
-
   }
+
   .eyeSlashWord{
     visibility: hidden;
   }

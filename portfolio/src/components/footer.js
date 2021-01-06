@@ -19,9 +19,9 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <footer style={{ marginTop: "25%" }}>
+      <footer>
         <div className="row">
-          <div class="footcnt">
+          <div className="footcnt">
             <div className="fInfo">
               <span>Esto no es Google no te confundas</span>
             </div>
